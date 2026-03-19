@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:super_app/core/widgets/content_card.dart';
 import 'package:super_app/core/widgets/horizontal_card_list.dart';
-import 'package:super_app/features/feed/presentation/cubit/department_cubit.dart';
-import 'package:super_app/features/feed/presentation/cubit/department_state.dart';
+import 'package:super_app/features/feed/presentation/cubit/department/department_cubit.dart';
+import 'package:super_app/features/feed/presentation/cubit/department/department_state.dart';
 
 class DepartmentsSection extends StatelessWidget {
   const DepartmentsSection({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:super_app/core/resources/data_state.dart';
 import 'package:super_app/features/feed/domain/usecases/get_departments_usecase.dart';
-import 'package:super_app/features/feed/presentation/cubit/department_state.dart';
+import 'package:super_app/features/feed/presentation/cubit/department/department_state.dart';
 
 class DepartmentCubit extends Cubit<DepartmentState> {
   final GetDepartmentsUsecase _getDepartmentsUsecase;

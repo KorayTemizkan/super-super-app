@@ -12,7 +12,7 @@ class MyBottomBar extends StatelessWidget {
       routes: const [
         FeedRoute(),
         ExploreRoute(),
-        ProfileRoute(),
+        VisitRoute(),
       ],
 
       bottomNavigationBuilder: (_, tabsRouter) {
@@ -20,9 +20,9 @@ class MyBottomBar extends StatelessWidget {
           currentIndex: tabsRouter.activeIndex,
           onTap: tabsRouter.setActiveIndex,
           items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.one_k), label: '1'),
-            BottomNavigationBarItem(icon: Icon(Icons.two_k), label: '2'),
-            BottomNavigationBarItem(icon: Icon(Icons.three_k), label: '3'),
+            BottomNavigationBarItem(icon: Icon(Icons.home,color: Colors.red), label: 'Feed'),
+            BottomNavigationBarItem(icon: Icon(Icons.explore, color: Colors.red), label: 'Explore'),
+            BottomNavigationBarItem(icon: Icon(Icons.museum, color: Colors.red), label: 'Visit'),
           ]
           );
       },

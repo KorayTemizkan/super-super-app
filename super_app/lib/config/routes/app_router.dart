@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'app_router.gr.dart';
+import 'package:super_app/config/routes/app_router.gr.dart';
 
 // Go Router'de eziyet çekmişiz valla yaa, burada her şey çok kolay
 /*
@@ -22,8 +22,10 @@ class AppRouter extends RootStackRouter {
           initial: true,
         ), // ilk açıldığında gözükecek sayfa
         AutoRoute(path: 'explore', page: ExploreRoute.page),
-        AutoRoute(path: 'profile', page: ProfileRoute.page),
+        AutoRoute(path: 'visit', page: VisitRoute.page),
       ],
     ),
   ];
 }
+
+// dart run build_runner build --delete-conflicting-outputs

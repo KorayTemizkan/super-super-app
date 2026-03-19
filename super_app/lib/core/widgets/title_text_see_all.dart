@@ -25,11 +25,11 @@ class TitleWithSeeAll extends StatelessWidget {
           TextButton(
             onPressed: () {
             },
-            style: TextButton.styleFrom(foregroundColor: Color(0xFFFF5722)),
+            style: TextButton.styleFrom(foregroundColor: Colors.red),
             child: Text(
-              "Tümünü Gör",
+              "See All",
               style: TextStyle(
-                color: Color(0xFFFF5722),
+                color: Colors.red,
                 fontSize: 16,
                 fontWeight: FontWeight.w900,
               ),

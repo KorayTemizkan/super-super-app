@@ -12,8 +12,9 @@
 import 'package:auto_route/auto_route.dart' as _i5;
 import 'package:super_app/config/routes/bottom_bar.dart' as _i3;
 import 'package:super_app/core/pages/explore_page.dart' as _i1;
-import 'package:super_app/features/feed/presentation/pages/feed_page.dart' as _i2;
-import 'package:super_app/core/pages/profile_page.dart' as _i4;
+import 'package:super_app/features/visit/presentation/pages/visit_page.dart' as _i4;
+import 'package:super_app/features/feed/presentation/pages/feed_page.dart'
+    as _i2;
 
 /// generated route for
 /// [_i1.ExplorePage]
@@ -64,17 +65,17 @@ class MyBottomBar extends _i5.PageRouteInfo<void> {
 }
 
 /// generated route for
-/// [_i4.ProfilePage]
-class ProfileRoute extends _i5.PageRouteInfo<void> {
-  const ProfileRoute({List<_i5.PageRouteInfo>? children})
-    : super(ProfileRoute.name, initialChildren: children);
+/// [_i4.VisitPage]
+class VisitRoute extends _i5.PageRouteInfo<void> {
+  const VisitRoute({List<_i5.PageRouteInfo>? children})
+    : super(VisitRoute.name, initialChildren: children);
 
-  static const String name = 'ProfileRoute';
+  static const String name = 'VisitRoute';
 
   static _i5.PageInfo page = _i5.PageInfo(
     name,
     builder: (data) {
-      return const _i4.ProfilePage();
+      return const _i4.VisitPage();
     },
   );
 }

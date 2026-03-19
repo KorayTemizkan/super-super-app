@@ -3,9 +3,9 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:super_app/core/widgets/appbar.dart';
 import 'package:super_app/core/widgets/title_text_see_all.dart';
-import 'package:super_app/features/feed/presentation/cubit/department_cubit.dart';
-import 'package:super_app/features/feed/presentation/cubit/department_state.dart';
+import 'package:super_app/features/feed/presentation/cubit/department/department_cubit.dart';
 import 'package:super_app/features/feed/presentation/widgets/departments_section.dart';
+import 'package:super_app/features/feed/presentation/widgets/feed_hero_section.dart';
 import 'package:super_app/injection_container.dart';
 import 'package:super_app/core/constants/string_constants.dart';
 @RoutePage()
@@ -33,7 +33,8 @@ class FeedPage extends StatelessWidget {
       ),
     );
     */
-
+    
+    // ! Sliver yapısına geç
     return BlocProvider.value(
       value: sl<DepartmentCubit>()..fetchDepartments(),
       child: Scaffold(
@@ -41,6 +42,9 @@ class FeedPage extends StatelessWidget {
         body: SingleChildScrollView(
           child: Column(
             children: [
+
+              HeroSection(),
+              
               const TitleWithSeeAll(text: StringConstants.mainPageTitleOne),
               const DepartmentsSection(),
 
